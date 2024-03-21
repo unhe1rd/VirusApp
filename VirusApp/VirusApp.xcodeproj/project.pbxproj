@@ -56,10 +56,7 @@
 			children = (
 				B46CA6932BACAD0500B1221D /* Application */,
 				B46CA6942BACB09F00B1221D /* Modules */,
-				B46CA6832BACAC8600B1221D /* ViewController.swift */,
-				B46CA6882BACAC8700B1221D /* Assets.xcassets */,
-				B46CA68A2BACAC8700B1221D /* LaunchScreen.storyboard */,
-				B46CA68D2BACAC8700B1221D /* Info.plist */,
+				B46CA6962BACB4C100B1221D /* SupportingFiles */,
 			);
 			path = VirusApp;
 			sourceTree = "<group>";
@@ -76,8 +73,27 @@
 		B46CA6942BACB09F00B1221D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B46CA6952BACB4A100B1221D /* ParametersInputModule */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		B46CA6952BACB4A100B1221D /* ParametersInputModule */ = {
+			isa = PBXGroup;
+			children = (
+				B46CA6832BACAC8600B1221D /* ViewController.swift */,
+			);
+			path = ParametersInputModule;
+			sourceTree = "<group>";
+		};
+		B46CA6962BACB4C100B1221D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B46CA68D2BACAC8700B1221D /* Info.plist */,
+				B46CA68A2BACAC8700B1221D /* LaunchScreen.storyboard */,
+				B46CA6882BACAC8700B1221D /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

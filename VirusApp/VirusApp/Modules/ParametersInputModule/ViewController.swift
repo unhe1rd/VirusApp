@@ -23,19 +23,20 @@ private extension ParametersInputViewController {
         setupStartButton()
     }
     
-    func setupStartButton(){
+    func setupStartButton() {
         view.addSubview(startButton)
+        let buttonSize:CGFloat = 100
         startButton.translatesAutoresizingMaskIntoConstraints = false
-        makeButtonImage()
+        makeButtonImage(buttonSize: buttonSize)
         NSLayoutConstraint.activate([
             startButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            startButton.widthAnchor.constraint(equalToConstant: 150),
-            startButton.heightAnchor.constraint(equalToConstant: 150),
+            startButton.widthAnchor.constraint(equalToConstant: buttonSize),
+            startButton.heightAnchor.constraint(equalToConstant: buttonSize),
         ])
     }
     
-    func makeButtonImage(){
-        let buttonImageConfiguration = UIImage.SymbolConfiguration(pointSize: 150, weight: .regular)
+    func makeButtonImage(buttonSize:CGFloat){
+        let buttonImageConfiguration = UIImage.SymbolConfiguration(pointSize: buttonSize, weight: .regular)
         startButton.setImage(UIImage(systemName: "play.circle", withConfiguration: buttonImageConfiguration), for: .normal)
     }
 }
